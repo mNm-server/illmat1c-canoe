@@ -1,5 +1,6 @@
 Config = {}
 
+Config.PickUpCanoeCommand = 'pucanoe'
 Config.DistanceFromWater = 1.5
 Config.Canoes = {
 	['canoe'] = {

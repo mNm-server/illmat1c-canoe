@@ -49,7 +49,7 @@ RegisterNetEvent('illmat1c-canoe:client:lauchcanoe', function(item)
 	end
 end)
 
-RegisterCommand('pucanoe', function()
+RegisterCommand(Config.PickUpCanoeCommand, function()
     if DoesEntityExist(PlayerPedId()) and not IsEntityDead(PlayerPedId()) then
         if IsPedSittingInAnyVehicle(PlayerPedId()) then
             local canoe = GetVehiclePedIsIn(PlayerPedId(), false)
